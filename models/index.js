@@ -1,0 +1,1 @@
+//Sync sequelize models to the database
