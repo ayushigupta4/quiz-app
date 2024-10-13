@@ -1,8 +1,8 @@
-***Online Quiz Application***
+# ***Online Quiz Application***
 
 A simple RESTful API for managing and taking quizzes, built with Node.js, Express.js, and Sequelize. This project allows users to register, log in, create quizzes, and take quizzes while receiving feedback on their performance.
 
-# Features
+## Features
 1. User authentication (registration and login)
 2. Quiz management (create, view, take quizzes)
 3. Calculate user scores based on quiz responses
@@ -15,7 +15,7 @@ A simple RESTful API for managing and taking quizzes, built with Node.js, Expres
 4. MySQL
 5. jsonwebtoken
 
-### Installation
+## Installation
 
 1. Clone the repository:
 
@@ -47,7 +47,7 @@ Replace the placeholders with your actual database.
 
     http://localhost:3000
 
-#### API Endpoints
+## API Endpoints
 
 1. User Authentication: 
     
@@ -116,5 +116,5 @@ Replace the placeholders with your actual database.
         • Response: Score and total questions.
 
 
-##### Usage
+## Usage
 After starting the server, you can test the API endpoints using tools like Postman. Make sure to include the JWT token in the Authorization header for protected routes.
