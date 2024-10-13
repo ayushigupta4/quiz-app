@@ -8,7 +8,8 @@ const Question = sequelize.define('Question', {
         allowNull: false,
     },
     correctAnswer: {
-        type: DataTypes.INTEGER
+        type: DataTypes.INTEGER,
+        allowNull: false,
     },
 });
 
