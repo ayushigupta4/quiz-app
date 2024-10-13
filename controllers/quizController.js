@@ -59,7 +59,8 @@ export const getQuizDetails = async (req, res) => {
 
 export const takeQuiz = async (req, res) => {
     const { answer } = req.body;
-    const quiz = await Quiz.findByPK(req.params.quizid, {
+    console.log("QuizId: ", req.query.quizId)
+    const quiz = await Quiz.findByPk(req.query.quizId, {
         include: {model: Question},
     });
 
