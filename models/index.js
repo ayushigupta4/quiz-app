@@ -4,17 +4,16 @@ import db from '../config.js';
 
 const sequelize = new Sequelize(db.development);
 
-async function connectToDatabase() {
+async function syncToDatabase() {
     try {
-        await sequelize.authenticate();
+        await sequelize.sync();
         console.log("Database Connected...");
     } catch(err) {
         console.log('Error: ' + err.message);
     }
 }
 
-connectToDatabase();
+syncToDatabase();
 
-await sequelize.sync();
 
 export default sequelize;

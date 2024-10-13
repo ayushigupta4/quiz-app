@@ -9,6 +9,7 @@ const db = {
         database: process.env.DBNAME,
         host: process.env.HOST,
         dialect: process.env.DIALECT,
+        port: process.env.PORT,
     },
 };
 
